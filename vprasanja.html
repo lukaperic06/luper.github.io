@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="kitare, glasbila, prodaja, bootstrap">
+    <meta name="description" content="spletna stran za prodajo kakovostnih kitar">
+    <meta name="author" content="Luka Perić">
+	<title>eNSA | Spletišče: Domača stran</title>
+	
+	<!-- Ikona spletišča -->
+	<link rel="icon" href="slike/Logotip.ico" type="image/x-icon">
+	
+	<!-- Googlove pisave -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	
+	<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    <!-- Ikone Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+	<!-- Oblikovni slogi za spletišče -->
+	<link rel="stylesheet" href="slog.css">
+	<script>
+		function toggleAnswer(id) {
+			var answer = document.getElementById(id);
+			answer.classList.toggle('show');
+		}
+	</script>
+</head>
+
+<body>
+	<header>
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+			
+				<div class="navbar-header">
+				    <!-- Gumb menija -->
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#meni">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>                        
+					</button>
+					<!-- Logotip s povezavo -->
+					<a class="navbar-brand" href="index.html"><img src="slike/logo.png" alt="eNSA logotip"></a>
+				</div>
+				
+				<!-- Meni, ki se na manjših zaslonih skrči -->
+				<div class="collapse navbar-collapse" id="meni">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="active"><a href="index.html">Domov</a></li>
+						<li><a href="onas.html">O nas</a></li>
+						<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Ponudba <span class="caret"></span></a>
+							<!-- Spustni meni -->
+						    <ul class="dropdown-menu">
+							  <li><a href="elektricne.html">Električne kitare</a></li>
+							  <li><a href="akusticne.html">Akustične kitare</a></li>
+							  <li><a href="basi.html">Basi</a></li>
+							  <li><a href="dodatki.html">Dodatki</a></li>
+							</ul>
+						</li>
+						<li><a href="kontakt.html">Kontakt</a></li>
+					</ul>
+				</div>
+				
+			</div>		
+		</nav>
+	</header>
+	
+	<section id="domov">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="slike/image1.png" alt="Bootstrap">
+                    <div class="napis">
+                        <p>FAQ</p>
+                        <span>Pridobite odgovore na vprašanja, ki se vam postavljajo</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+	<section class="container">
+		<h1>Dobrodošli v našem oddelku Pogosta vprašanja!</h1>
+    <p>Ste v dvomih ali iščete odgovore na najpogostejša vprašanja o naših kitarah in storitvah? Ne skrbite, smo tukaj, da vam pomagamo. Spodaj najdete odgovore na nekatera pogosta vprašanja, ki jih postavljajo naši kupci. Če potrebujete dodatno pomoč, se ne obotavljajte, da nas kontaktirate prek obrazca za stike spodaj.</p>
+	</section>
+	<section class="vprasanja">
+		<button onclick="toggleAnswer('answer1')">1. Kako lahko naročim kitaro?</button>
+		<div id="answer1" class="answer">
+			<p>Za nakup kitar iz naše trgovine lahko preprosto obiščete našo spletno trgovino, kjer lahko izberete želeno kitaro in sledite postopku nakupa.</p>
+		</div>
+	
+		<button onclick="toggleAnswer('answer2')">2. Ali imate možnost dostave?</button>
+		<div id="answer2" class="answer">
+			<p>Da, ponujamo dostavo po vsem svetu. Podrobnosti o dostavi so na voljo med postopkom nakupa.</p>
+		</div>
+	
+		<button onclick="toggleAnswer('answer3')">3. Kakšne so možnosti plačila?</button>
+		<div id="answer3" class="answer">
+			<p>Sprejemamo plačila prek kreditnih/debetnih kartic, PayPal-a in bančnega nakazila. Več informacij o možnostih plačila najdete na naši spletni strani med postopkom nakupa.</p>
+		</div>
+	
+		<button onclick="toggleAnswer('answer4')">4. Ali lahko vrnem ali zamenjam kitaro, če mi ne ustreza?</button>
+		<div id="answer4" class="answer">
+			<p>Da, če iz kakršnega koli razloga niste zadovoljni z nakupom, vam omogočamo vračilo ali zamenjavo v določenem časovnem obdobju. Prosimo, preverite našo politiko vračil in zamenjav za več informacij.</p>
+		</div>
+	
+		<button onclick="toggleAnswer('answer5')">5. Ali imate možnost popravila ali vzdrževanja kitar?</button>
+		<div id="answer5" class="answer">
+			<p>Da, nudimo storitve popravil in vzdrževanja za kitaro. Za več informacij in rezervacijo termina nas kontaktirajte prek naše kontaktne strani.</p>
+		</div>
+	</section>
+         <!-- Noga -->
+         <footer>
+            <div class="footer-links">
+                <a href="vprasanja.html">FAQ</a>
+                <a href="novice.html">Novice</a>
+            </div>
+            <div class="company-info">
+                <p>Naslov: Glavna ulica 1, 1000 Ljubljana</p>
+                <p>Telefon: +386 1 234 5678</p>
+                <p>Email: info@luper.si</p>
+            </div>
+            <p>&copy; 2024 Prodaja kitar</p>
+        </footer>
+		
+		<script>
+			function toggleAnswer(id) {
+				var answer = document.getElementById(id);
+				if (answer.style.display === "block") {
+					answer.style.display = "none";
+				} else {
+					answer.style.display = "block";
+				}
+			}
+		</script>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

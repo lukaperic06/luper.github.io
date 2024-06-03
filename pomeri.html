@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="kitare, glasbila, prodaja, bootstrap">
+    <meta name="description" content="spletna stran za prodajo kakovostnih kitar">
+    <meta name="author" content="Luka Perić">
+    <title>eNSA | Spletišče: Domača stran</title>
+    
+    <!-- Ikona spletišča -->
+    <link rel="icon" href="slike/Logotip.ico" type="image/x-icon">
+    
+    <!-- Googlove pisave -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    <!-- Ikone Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+    <!-- Oblikovni slogi za spletišče -->
+    <link rel="stylesheet" href="slog.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <!-- Gumb menija -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#meni">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                    </button>
+                    <!-- Logotip s povezavo -->
+                    <a class="navbar-brand" href="index.html"><img src="slike/logo.png" alt="eNSA logotip"></a>
+                </div>
+                
+                <!-- Meni, ki se na manjših zaslonih skrči -->
+                <div class="collapse navbar-collapse" id="meni">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="index.html">Domov</a></li>
+                        <li><a href="onas.html">O nas</a></li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Ponudba <span class="caret"></span></a>
+                            <!-- Spustni meni -->
+                            <ul class="dropdown-menu">
+                                <li><a href="elektricne.html">Električne kitare</a></li>
+                                <li><a href="akusticne.html">Akustične kitare</a></li>
+                                <li><a href="basi.html">Basi</a></li>
+                                <li><a href="dodatki.html">Dodatki</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                </div>
+            </div>      
+        </nav>
+    </header>
+    
+    <section id="domov">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="slike/guitar3.png" alt="Bootstrap">
+                    <div class="napis">
+                        <p>PO MERI</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+	<section class="container">
+
+		<form id="naročilo">
+			<fieldset>
+				<legend>Karakteristike kitare:</legend>
+				<table>
+					<tr>
+						<td>Oblika trupa:</td>
+						<td>
+							<select onchange="document.getElementById('test').src = this.value" autofocus>
+								<option value="https://www.shutterstock.com/shutterstock/photos/1178906413/display_1500/stock-vector-electric-guitar-line-vector-1178906413.jpg">Stratocaster</option>
+								<option value="https://www.shutterstock.com/shutterstock/photos/51675991/display_1500/stock-vector-black-white-illustration-of-solid-body-electric-guitar-51675991.jpg">Telecaster</option>
+								<option value="https://www.shutterstock.com/shutterstock/photos/150657101/display_1500/stock-vector-hand-drawn-electric-guitar-on-white-les-paul-150657101.jpg">Les Paul</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>Barva trupa:</td>
+						<td><input type="color"></td>
+					</tr>
+					<tr>
+						<td>Magneti:</td>
+						<td>
+							<select>
+								<option value="SSS">SSS</option>
+								<option value="HSS">HSS</option>
+								<option value="HH">HH</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>Material vrata:</td>
+						<td>
+							<select>
+								<option value="javor">Javor</option>
+								<option value="palisander">Palisander</option>
+								<option value="jelša">Jelša</option>
+								<option value="mahagonij">Mahagonij</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>Število prečk:</td>
+						<td><input type="number" name="quantity" min="16" max="26" required></td>
+					</tr>
+					<tr>
+						<td>Ročica:</td>
+					</tr>
+					<tr>
+						<td>Ja</td>
+						<td><input type="radio" name="ročica" value="ja" required></td>
+					</tr>
+					<tr>
+						<td>Ne</td>
+						<td><input type="radio" name="ročica" value="ne" required> </td>
+					</tr>
+					<tr>
+						<td>Rok za izdelavo:</td>
+						<td><input type="date" required></td>
+					</tr>
+				</table>
+			</fieldset>
+			<img id="test" src="https://www.shutterstock.com/shutterstock/photos/1178906413/display_1500/stock-vector-electric-guitar-line-vector-1178906413.jpg" alt="Oblika">
+			<fieldset class="narocnik">
+				<legend>Podatki o naročniku</legend>
+				<table>
+					<tr>
+						<td>Ime:</td>
+						<td><input type="text" required placeholder="Ime"></td>
+					</tr>
+					<tr>
+						<td>Priimek:</td>
+						<td><input type="text" required placeholder="Priimek"></td>
+					</tr>
+					<tr>
+						<td>E-mail:</td>
+						<td><input type="email" required placeholder="E-mail"></td>
+					</tr>
+					<tr>
+						<td><input type="submit" value="Pošlji"></td>
+					</tr>
+				</table>
+			</fieldset>
+		</form>
+	</section>
+
+    <!-- Noga -->
+    <footer>
+        <div class="footer-links">
+            <a href="vprasanja.html">FAQ</a>
+            <a href="novice.html">Novice</a>
+        </div>
+        <div class="company-info">
+            <p>Naslov: Glavna ulica 1, 1000 Ljubljana</p>
+            <p>Telefon: +386 1 234 5678</p>
+            <p>Email: info@luper.si</p>
+        </div>
+        <p>&copy; 2024 Prodaja kitar</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

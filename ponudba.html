@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="kitare, glasbila, prodaja, bootstrap">
+    <meta name="description" content="spletna stran za prodajo kakovostnih kitar">
+    <meta name="author" content="Luka Perić">
+	<title>eNSA | Spletišče: Domača stran</title>
+	
+	<!-- Ikona spletišča -->
+	<link rel="icon" href="slike/Logotip.ico" type="image/x-icon">
+	
+	<!-- Googlove pisave -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	
+	<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    <!-- Ikone Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+	<!-- Oblikovni slogi za spletišče -->
+	<link rel="stylesheet" href="slog.css">
+</head>
+
+<body>
+	<header>
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+			
+				<div class="navbar-header">
+				    <!-- Gumb menija -->
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#meni">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>                        
+					</button>
+					<!-- Logotip s povezavo -->
+					<a class="navbar-brand" href="index.html"><img src="slike/logo.png" alt="eNSA logotip"></a>
+				</div>
+				
+				<!-- Meni, ki se na manjših zaslonih skrči -->
+				<div class="collapse navbar-collapse" id="meni">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="active"><a href="index.html">Domov</a></li>
+						<li><a href="onas.html">O nas</a></li>
+						<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Ponudba <span class="caret"></span></a>
+							<!-- Spustni meni -->
+						    <ul class="dropdown-menu">
+							  <li><a href="elektricne.html">Električne kitare</a></li>
+							  <li><a href="akusticne.html">Akustične kitare</a></li>
+							  <li><a href="basi.html">Basi</a></li>
+							  <li><a href="dodatki.html">Dodatki</a></li>
+							</ul>
+						</li>
+						<li><a href="kontakt.html">Kontakt</a></li>
+					</ul>
+				</div>
+				
+			</div>		
+		</nav>
+	</header>
+	
+	<<section id="domov">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="slike/guitar3.png" alt="Bootstrap">
+                    <div class="napis">
+                        <p>PONUDBA</p>
+                        <span>Raziskujte naš širok izbor kakovostnih kitar</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <section>
+            <section class="container with-border">
+				<h2 class="section-title">Raziščite našo paleto instrumentov</h2>
+				
+				<div class="product-type">
+					<img src="slike/electric.png" alt="Električne kitare">
+					<h3 class="product-type-title">Električne kitare</h3>
+					<p class="product-type-description">Odkrijte našo zbirko električnih kitare, zasnovanih za močne tone in vsestranski zvok. Od klasičnih modelov do sodobnih oblik imamo popolno električno kitaro za vsak slog glasbe.</p>
+					<a href="elektricne.html" class="btn btn-primary">Oglejte si električne kitare</a>
+				</div>
+			
+				<div class="product-type">
+					<img src="slike/acoustic.png" alt="Akustične kitare">
+					<h3 class="product-type-title">Akustične kitare</h3>
+					<p class="product-type-description">Doživite naravno lepoto in bogate tone naših akustičnih kitar. Izdelane iz visokokakovostnih lesov in natančno izdelane, naše akustične kitare ponujajo izjemno igrivost in resonanco.</p>
+					<a href="akusticne.html" class="btn btn-primary">Oglejte si akustične kitare</a>
+				</div>
+			
+				<div class="product-type">
+					<img src="slike/Bass.png" alt="Bas kitare">
+					<h3 class="product-type-title">Bas kitare</h3>
+					<p class="product-type-description">Pripravite se, da boste v grozu z našim naborom bas kitar. Ne glede na to, ali ste začetnik ali izkušen basist, naši instrumenti ponujajo globoke, punchy tone in udobno igrivost.</p>
+					<a href="basi.html" class="btn btn-primary">Oglejte si bas kitare</a>
+				</div>
+			
+				<div class="product-type">
+					<img src="slike/aces.jpg" alt="Dodatki">
+					<h3 class="product-type-title">Dodatki</h3>
+					<p class="product-type-description">Izboljšajte svojo izkušnjo igranja z našo izbiro dodatkov. Od strun in pletenic do kovčkov in trakov, imamo vse, kar potrebujete, da svojo glasbo dvignete na naslednjo raven.</p>
+					<a href="dodatki.html" class="btn btn-primary">Oglejte si dodatke</a>
+				</div>
+			
+				<div class="product-type">
+					<img src="slike/custom.jpg" alt="Po meri izdelane kitare">
+					<h3 class="product-type-title">Po meri izdelane kitare</h3>
+					<p class="product-type-description">Ustvarite svojo sanjsko kitaro s storitvijo po meri. Izberite želene lesene materiale, strojno opremo in zaključek, da oblikujete unikaten instrument, ki odraža vaš edinstven slog in zvok.</p>
+					<a href="pomeri.html" class="btn btn-primary">Oblikujte svojo po meri izdelano kitaro</a>
+				</div>
+			</section>
+        </section>
+         <!-- Noga -->
+         <footer>
+            <div class="footer-links">
+                <a href="vprasanja.html">FAQ</a>
+                <a href="novice.html">Novice</a>
+            </div>
+            <div class="company-info">
+                <p>Naslov: Glavna ulica 1, 1000 Ljubljana</p>
+                <p>Telefon: +386 1 234 5678</p>
+                <p>Email: info@luper.si</p>
+            </div>
+            <p>&copy; 2024 Prodaja kitar</p>
+        </footer>
+
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

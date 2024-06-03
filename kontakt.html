@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="kitare, glasbila, prodaja, bootstrap">
+    <meta name="description" content="spletna stran za prodajo kakovostnih kitar">
+    <meta name="author" content="Luka Perić">
+	<title>eNSA | Spletišče: Domača stran</title>
+	
+	<!-- Ikona spletišča -->
+	<link rel="icon" href="slike/Logotip.ico" type="image/x-icon">
+	
+	<!-- Googlove pisave -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	
+	<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    <!-- Ikone Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+	<!-- Oblikovni slogi za spletišče -->
+	<link rel="stylesheet" href="slog.css">
+</head>
+
+<body>
+	<header>
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+			
+				<div class="navbar-header">
+				    <!-- Gumb menija -->
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#meni">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>                        
+					</button>
+					<!-- Logotip s povezavo -->
+					<a class="navbar-brand" href="index.html"><img src="slike/logo.png" alt="eNSA logotip"></a>
+				</div>
+				
+				<!-- Meni, ki se na manjših zaslonih skrči -->
+				<div class="collapse navbar-collapse" id="meni">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="active"><a href="index.html">Domov</a></li>
+						<li><a href="onas.html">O nas</a></li>
+						<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Ponudba <span class="caret"></span></a>
+							<!-- Spustni meni -->
+						    <ul class="dropdown-menu">
+							  <li><a href="elektricne.html">Električne kitare</a></li>
+							  <li><a href="akusticne.html">Akustične kitare</a></li>
+							  <li><a href="basi.html">Basi</a></li>
+							  <li><a href="dodatki.html">Dodatki</a></li>
+							</ul>
+						</li>
+						<li><a href="kontakt.html">Kontakt</a></li>
+					</ul>
+				</div>
+				
+			</div>		
+		</nav>
+	</header>
+	
+	<section id="domov">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="slike/image.png" alt="Bootstrap">
+                    <div class="napis">
+                        <p>KONTAKT</p>
+                        <span>Stopite v stik z nami za podporo</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        </section>
+        <section class="container">
+            <div id="zemljevid">
+                <div class="container-fluid">
+                    <div id="map"></div>
+                </div>
+            </div>
+            <div class="row">
+				<form>
+					<div class="col-sm-3">
+				  	  	<div class="form-group">
+						  	<label for="ime">Ime <span class="zvezdica">*</span></label>
+							<input type="text" class="form-control" id="ime" required>
+					  	</div>
+					  	<div class="form-group">
+						  	<label for="priimek">Priimek <span class="zvezdica">*</span></label>
+							<input type="text" class="form-control" id="priimek" required>
+					  	</div>
+					  	<div class="form-group">
+							<label for="email">Elektronski naslov <span class="zvezdica">*</span></label>
+							<input type="email" class="form-control" id="email" required>
+					  	</div>
+					  	<div class="form-group">
+							<label for="tel">Telefon</label>
+							<input type="tel" class="form-control" id="tel">
+					  	</div>
+					</div>
+					<div class="col-sm-9">
+						<label>Vaše sporočilo</label>
+						<textarea name="sporocilo" rows="15" class="form-control"></textarea>
+						<div class="checkbox">
+							<label><input type="checkbox" required>Strinjam se s splošnimi pogoji</label>
+					  	</div>
+					  	<button type="submit" class="btn btn-primary">Pošlji sporočilo</button>
+					</div>
+				</form>
+			</div>
+		</div>
+        </section>
+         <!-- Noga -->
+         <footer>
+            <div class="footer-links">
+                <a href="vprasanja.html">FAQ</a>
+                <a href="novice.html">Novice</a>
+            </div>
+            <div class="company-info">
+                <p>Naslov: Glavna ulica 1, 1000 Ljubljana</p>
+                <p>Telefon: +386 1 234 5678</p>
+                <p>Email: info@luper.si</p>
+            </div>
+            <p>&copy; 2024 Prodaja kitar</p>
+        </footer>
+    <script>
+		function myMap() {
+		  var myCenter = new google.maps.LatLng(46.250623,14.348762);
+		  var mapCanvas = document.getElementById("map");
+		  var mapOptions = {center: myCenter, zoom: 15};
+		  var map = new google.maps.Map(mapCanvas, mapOptions);
+		  var marker = new google.maps.Marker({position:myCenter});
+		  marker.setMap(map);
+
+		  var infowindow = new google.maps.InfoWindow({
+			content: "ŠC Kranj<br>Kidričeva cesta 55<br>4000 Kranj"
+		  });
+		  infowindow.open(map,marker);
+		}
+	</script>  
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNwS87CPSATXb_nkhTmN5-VxgLBuMbW3I&callback=myMap"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
