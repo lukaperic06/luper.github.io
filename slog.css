@@ -65,6 +65,10 @@ p { font-size: 1.15em; }
    color: #333;
 }
 
+.navbar-inverse .navbar-nav .active {
+   background-color: grey; /* Dodano za obarvanje aktivne strani */
+}
+
 .dropdown-menu a {
    padding: 0px 10px !important;
    align-content: center !important;
@@ -210,8 +214,6 @@ footer {
    background-color: #ffffff;
 }
 
-
-
 .section-content {
    color: #666;
 }
@@ -232,7 +234,6 @@ footer {
 }
 
 /* Razni slogi */
-
 
 table {
    width: 100%;
@@ -338,11 +339,11 @@ section {
    padding: 20px;
    border-radius: 10px;
 }
-.napis{
+.napis {
    padding: 5px 20px;
 }
 
-.vprasanja{
+.vprasanja {
    padding: 20px;
    width: 80%;
    margin: 0 auto;
@@ -378,7 +379,7 @@ button:hover {
 p {
    margin: 0;
 }
-.footer-links{
+.footer-links {
    text-transform: uppercase;
    font-size: 20px;
 }
@@ -393,14 +394,14 @@ p {
 .styled-list li {
    margin-bottom: 10px;
 }
-.product-type img{
-   width:300px;
+.product-type img {
+   width: 300px;
 }
-.product-type a{
+.product-type a {
    background-color: grey;
    transition: all 1s;
 }
-.product-type a:hover{
+.product-type a:hover {
    background-color: #222;
 }
 .with-borders {
@@ -414,16 +415,16 @@ p {
    padding-bottom: 40px; 
    margin-bottom: 20px; 
 }
-.container h2{
+.container h2 {
    border-top: 2px solid #ccc;
    padding-top: 40px;
    margin-top: 20px; 
 }
-.napis a{
+.napis a {
    background-color: grey;
    border: 1px solid black;
    transition: all 1s;
 }
-.napis a:hover{
+.napis a:hover {
    background-color: #333;
 }
